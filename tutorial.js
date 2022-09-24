@@ -4,7 +4,7 @@ import * as LOADER from './three.js-master/src/loaders/LoadingManager.js';
 import * as UTIL from '/tree/main/common/utilities.js';
 import * as ANIMATION from './common/animation.js';
 import {Racoon} from './common/player.js';
-import {World} from './common/world.js';
+import {World} from '/tree/main/common/world.js';
 
 
 var racoon;
