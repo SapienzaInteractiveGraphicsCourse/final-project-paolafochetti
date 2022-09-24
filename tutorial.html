@@ -60,8 +60,14 @@
 
 		<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 		<script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
-		<script type="module" src="../three.js-master/build/three.module.js"></script>
-	
+		
+		<script type="importmap">
+		{
+	    "imports": {
+	    	"three": "./three.js-master/build/three.module.js"
+		
+	         }
+	}</script>
 		
 		<script type="module" src="./tutorial.js"></script>
 		<div id="progressContainer" class="progress-bar-container">
