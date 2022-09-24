@@ -1,8 +1,6 @@
-import * as THREE from './tree/main/three.js-master/build/three.module.js';
-
-			
-import * as GLTF from './tree/main/three.js-master/examples/jsm/loaders/GLTFLoader.js';
-import * as LOADER from './tree/main/three.js-master/src/loaders/LoadingManager.js';
+import * as THREE from '/tree/main/three.js-master/build/three.module.js';
+import * as GLTF from '/tree/main/three.js-master/examples/jsm/loaders/GLTFLoader.js';
+import * as LOADER from '/tree/main/three.js-master/src/loaders/LoadingManager.js';
 import * as UTIL from 'utilities';
 import * as ANIMATION from 'animation';
 import {Racoon} from 'player';
