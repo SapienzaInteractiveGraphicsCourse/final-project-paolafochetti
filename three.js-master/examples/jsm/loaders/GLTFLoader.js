@@ -260,7 +260,7 @@ class GLTFLoader extends Loader {
 		}
 
 		return this;
-
+ 
 	}
 
 	unregister( callback ) {
