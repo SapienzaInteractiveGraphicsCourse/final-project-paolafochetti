@@ -1,4 +1,4 @@
-import * as THREE from 'https://unpkg.com/three@0.138.0/build/three.module.js';
+import * as THREE from '../three.js-master/build/three.module.js';
 
 var groundDistance=0;
 var objects=[];
