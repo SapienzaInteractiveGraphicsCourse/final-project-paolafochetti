@@ -38,6 +38,7 @@ export function raise(treasure){
 export function animatePlanet(planet){
 	createjs.Tween.get(planet.rotation,{loop:true}).to({y: 360*Math.PI/180},100000);
 }	
+
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
