@@ -1,5 +1,5 @@
 import * as THREE from './three.js-master/build/three.module.js';
-import * as GLTF from './three.js-master/examples/jsm/loaders/GLTFLoader.js';
+import * as GLTF from './three.js-master/loaders/GLTFLoader.js';
 import * as LOADER from './three.js-master/src/loaders/LoadingManager.js';
 import * as UTIL from './common/utilities.js';
 import * as ANIMATION from './common/animation.js';
