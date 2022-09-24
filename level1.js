@@ -55,7 +55,7 @@ function loadModels(){
 	
  	const loader = new GLTF.GLTFLoader(manager);
 
-	loader.load("/models/racoon.glb", 
+	loader.load("./models/racoon.glb", 
 				function(glb){
 			  		racoon = new Racoon(glb.scene.children[0]);
 			  		racoon.root.position.x = 0 ;
@@ -69,7 +69,7 @@ function loadModels(){
 				},undefined, function(error){console.error(error);});
 
 	//life
-	loader.load("/models/heart/scene.gltf", 
+	loader.load("./models/heart/scene.gltf", 
 				function(glb){
 			  		lifeModel1 = glb.scene;
 			  		lifeModel1.name='life1';
@@ -85,7 +85,7 @@ function loadModels(){
 				},undefined, function(error){console.error(error);});
 	
 	//spaceship
-	loader.load("/models/level1/spaceShip.glb", 
+	loader.load("./models/level1/spaceShip.glb", 
 				function(glb){
 			  		spaceShip = glb.scene.children[0];
 			  		spaceShip.name='spaceShip';
@@ -94,7 +94,7 @@ function loadModels(){
 			  	},undefined, function(error){console.error(error);});
 
 	//treasure
-	loader.load("/models/level1/Bracelet platform.glb", 
+	loader.load("./models/level1/Bracelet platform.glb", 
 		function(glb){
 	  		platform = glb.scene;
 	  		platform.name = 'treasurePlatform';
@@ -125,7 +125,7 @@ function loadModels(){
 		undefined, function(error){console.error(error);});
 
 	//platforms
-	loader.load("/models/level1/platform.glb",function(glb){
+	loader.load("./models/level1/platform.glb",function(glb){
 		platform1 = glb.scene;
 		platform2 = platform1.clone();
 		platform3 = platform1.clone();
@@ -141,26 +141,26 @@ function loadModels(){
 	//textures
 	const textLoader = new THREE.TextureLoader(manager);
 
-	AmbientOcclusion = textLoader.load("/texture/level1/stone/AmbientOcclusion.jpg");
-	BaseColor = textLoader.load("/texture/level1/stone/BaseColor.jpg");
-	Height = textLoader.load("/texture/level1/stone/Height.png");
-	Material = textLoader.load("/texture/level1/stone/Material.jpg");
-	Normal = textLoader.load("/texture/level1/stone/Normal.jpg");
-	Roughness = textLoader.load("/texture/level1/stone/Roughness.jpg");
+	AmbientOcclusion = textLoader.load("./texture/level1/stone/AmbientOcclusion.jpg");
+	BaseColor = textLoader.load("./texture/level1/stone/BaseColor.jpg");
+	Height = textLoader.load("./texture/level1/stone/Height.png");
+	Material = textLoader.load("./texture/level1/stone/Material.jpg");
+	Normal = textLoader.load("./texture/level1/stone/Normal.jpg");
+	Roughness = textLoader.load("./texture/level1/stone/Roughness.jpg");
 	
-	LavaAmbientOcclusion = textLoader.load("/texture/level1/lava/AmbientOcclusion.png");
-	LavaBaseColor = textLoader.load("/texture/level1/lava/BaseColor.png");
-	LavaHeight = textLoader.load("/texture/level1/lava/Height.png");
-	LavaNormal = textLoader.load("/texture/level1/lava/Normal.png");
-	LavaSpecular = textLoader.load("/texture/level1/lava/Specular.png");
+	LavaAmbientOcclusion = textLoader.load("./texture/level1/lava/AmbientOcclusion.png");
+	LavaBaseColor = textLoader.load("./texture/level1/lava/BaseColor.png");
+	LavaHeight = textLoader.load("./texture/level1/lava/Height.png");
+	LavaNormal = textLoader.load("./texture/level1/lava/Normal.png");
+	LavaSpecular = textLoader.load("./texture/level1/lava/Specular.png");
 
-	LavaStoneAmbientOcclusion = textLoader.load("/texture/level1/lavaStone/AmbientOcclusion.png");
-	LavaStoneBaseColor = textLoader.load("/texture/level1/lavaStone/BaseColor.png");
-	LavaStoneHeight = textLoader.load("/texture/level1/lavaStone/Height.png");
-	LavaStoneNormal = textLoader.load("/texture/level1/lavaStone/Normal.png");
-	LavaStoneSpecular = textLoader.load("/texture/level1/lavaStone/Specular.png");
+	LavaStoneAmbientOcclusion = textLoader.load("./texture/level1/lavaStone/AmbientOcclusion.png");
+	LavaStoneBaseColor = textLoader.load("./texture/level1/lavaStone/BaseColor.png");
+	LavaStoneHeight = textLoader.load("./texture/level1/lavaStone/Height.png");
+	LavaStoneNormal = textLoader.load("./texture/level1/lavaStone/Normal.png");
+	LavaStoneSpecular = textLoader.load("./texture/level1/lavaStone/Specular.png");
 
-	background = textLoader.load("/texture/background.png");
+	background = textLoader.load("./texture/background.png");
 }
 
 function init(){
