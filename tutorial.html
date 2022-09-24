@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Galaxy Hunt - Tutorial</title>
+		<style>
+			body { margin: 0; background-size: 50% 50%;}
+
+			
+
+			div.container{
+				background-color: black;
+				height:100%;
+
+			}
+			.progress-bar-container{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform:translate(-50%,-50%);
+				width: 100%;
+				height:100%;
+				background-color: rgba(0,0,0,1);
+				display:flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+			}
+			
+			.overlay{
+				position: fixed;
+				background-color: black;
+				width: 100%;
+				height: 40px;
+				opacity:1;
+				bottom:0px;
+			}
+
+			.instructions {
+				color: white;
+				top: 0px;
+				font-family: sans-serif;
+				font-style: italic;
+				font-size: 10px;
+				padding-left: 20px;
+			}
+			#progress-bar{
+				width: 30%;
+				margin-top: 0.5%;
+				height: 2%;
+			}
+			label{
+				color: white;
+				font-size: 2rem;
+			}
+		</style>
+	</head>
+	<body >
+
+		<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+		<script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
+	
+
+		<script type="module" src="./tutorial.js"></script>
+		<div id="progressContainer" class="progress-bar-container">
+			<label>Wait a moment, we are landing on a new planet...</label>
+			<progress id="progress-bar" value="0" max="100">
+		</div>
+		<div id='container' class='container'></div>
+		<div id='console' class='overlay'><p id='ins' class='instructions'></p></div>
+
+	</body>
+</html>
