@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Galaxy hunt</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<style>
+			body {background-image: url("/texture/main.jpg");background-size: contain;}
+			a:link{
+			  color: violet;
+			  margin-right: 3em;
+			  margin-left: 35px;
+			  font-size: 40px;
+			  text-indent: 30px;
+			  text-decoration: none;
+			}
+			a:visited{
+			  color: violet;
+			  margin-right: 2em;
+			  font-size: 40px;
+			  text-indent: 30px;
+			  text-decoration: none;
+			}
+			p{
+			  color: violet;
+			  margin-right: 3.3em;
+			  font-size: 40px;
+			  text-indent: 30px;
+			  cursor:pointer;
+			  margin-left: 1px;
+			}
+			div.absolute {
+			  text-align: left;
+			  text-transform: uppercase;
+			  position: absolute;
+			  top: 250px;
+			  right: 25px;
+			  width: 600px;
+			  height: 200px;
+			}
+			.hid{
+				display:none;
+				text-align: left;
+			  	text-transform: uppercase;
+			  	position: absolute;
+			    margin-left: 0px;
+			    margin-top: 0px;
+
+			}
+		</style>
+	</head>
+	<body >
+		<div class="absolute">
+		<a href="/tutorial.html"><i class="material-icons" style="font-size:30px;color:white;">pets</i><b>Start Training</b></a>
+		<p id='parag' onclick="show()"><i class="material-icons" style="font-size:30px;color:white;">pets</i><b>Start Hunting</b></p>
+		<div class='hid' id='hidd'>
+		<a href="/level1.html" id='level1' ><i class="material-icons" style="font-size:30px;color:white;">pets</i><b>Lava mountains</b></a><br><br>
+		<a href="/level2.html" id='level2' ><i class="material-icons" style="font-size:30px;color:white;">pets</i>T<b>he deep</b></a>
+		</div>
+	</div>
+		<script type="text/javascript">
+		function show() {
+			document.getElementById('hidd').style.display = "block";
+			document.getElementById('parag').style.cursor = "auto";
+   	}
+	</script>
+
+	</body>
+</html>
