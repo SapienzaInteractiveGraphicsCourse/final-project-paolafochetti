@@ -1,4 +1,4 @@
-class LoadingManager {
+class LoadingManager { 
 
 	constructor( onLoad, onProgress, onError ) {
 
