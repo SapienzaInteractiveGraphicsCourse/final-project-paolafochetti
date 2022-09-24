@@ -52,7 +52,7 @@ function loadModels(){
  	const loader = new GLTF.GLTFLoader(manager);
 
  	//racoon
-	loader.load("/models/racoon.glb", 
+	loader.load("./models/racoon.glb", 
 				function(glb){
 			  		racoon = new Racoon(glb.scene.children[0]);
 			  		racoon.level=0;
@@ -64,7 +64,7 @@ function loadModels(){
 			  		racoon.checkPoint = racoon.model.position.clone();});
 
 	// life
-	loader.load("/models/heart/scene.gltf", 
+	loader.load("./models/heart/scene.gltf", 
 				function(glb){
 			  		lifeModel1 = glb.scene;
 			  		lifeModel1.name='life1';
@@ -79,7 +79,7 @@ function loadModels(){
 				},undefined, function(error){console.error(error);});
 	
 	//spaceShip
-	loader.load("/models/training/spaceShip.glb", 
+	loader.load("./models/training/spaceShip.glb", 
 				function(glb){
 			  		spaceShip = glb.scene.children[0];
 			  		spaceShip.name='spaceShip';
@@ -88,7 +88,7 @@ function loadModels(){
 				},undefined, function(error){console.error(error);});
 	
 	//treasure
-	loader.load("/models/training/crystalBall.glb", 
+	loader.load("./models/training/crystalBall.glb", 
 				function(glb){
 			  		treasure = glb.scene.children[0].children[0];
 			  		treasure.name='treasure';
@@ -102,25 +102,25 @@ function loadModels(){
 
 	const textLoader = new THREE.TextureLoader(manager);
 
-	AmbientOcclusion = textLoader.load("/texture/training/AmbientOcclusion.jpg");
-	BaseColor = textLoader.load("/texture/training/BaseColor.jpg");
-	Height = textLoader.load("/texture/training/Height.png");
-	Normal = textLoader.load("/texture/training/Normal.jpg");
-	Roughness = textLoader.load("/texture/training/Roughness.jpg");
+	AmbientOcclusion = textLoader.load("./texture/training/AmbientOcclusion.jpg");
+	BaseColor = textLoader.load("./texture/training/BaseColor.jpg");
+	Height = textLoader.load("./texture/training/Height.png");
+	Normal = textLoader.load("./texture/training/Normal.jpg");
+	Roughness = textLoader.load("./texture/training/Roughness.jpg");
 
-	treasureAmbientOcclusion = textLoader.load("/texture/crystalBall/AmbientOcclusion.jpg");
-	treasureBaseColor = textLoader.load("/texture/crystalBall/BaseColor.jpg");
-	treasureHeight = textLoader.load("/texture/crystalBall/Height.png");
-	treasureNormal = textLoader.load("/texture/crystalBall/Normal.jpg");
-	treasureRoughness = textLoader.load("/texture/crystalBall/Roughness.jpg");
+	treasureAmbientOcclusion = textLoader.load("./texture/crystalBall/AmbientOcclusion.jpg");
+	treasureBaseColor = textLoader.load("./texture/crystalBall/BaseColor.jpg");
+	treasureHeight = textLoader.load("./texture/crystalBall/Height.png");
+	treasureNormal = textLoader.load("./texture/crystalBall/Normal.jpg");
+	treasureRoughness = textLoader.load("./texture/crystalBall/Roughness.jpg");
 
-	PlanetAmbientOcclusion = textLoader.load("/texture/planet0/AmbientOcclusion.jpg");
-	PlanetBaseColor = textLoader.load("/texture/planet0/BaseColor.jpg");
-	PlanetHeight = textLoader.load("/texture/planet0/Height.png");
-	PlanetNormal = textLoader.load("/texture/planet0/Normal.jpg");
-	PlanetRoughness = textLoader.load("/texture/planet0/Roughness.jpg");
+	PlanetAmbientOcclusion = textLoader.load("./texture/planet0/AmbientOcclusion.jpg");
+	PlanetBaseColor = textLoader.load("./texture/planet0/BaseColor.jpg");
+	PlanetHeight = textLoader.load("./texture/planet0/Height.png");
+	PlanetNormal = textLoader.load("./texture/planet0/Normal.jpg");
+	PlanetRoughness = textLoader.load("./texture/planet0/Roughness.jpg");
 
-	background = textLoader.load("/texture/background.png");
+	background = textLoader.load("./texture/background.png");
 
 }
 
