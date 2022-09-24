@@ -1,4 +1,4 @@
-import * as THREE from '../three.js-master/build/three.module.js';
+import * as THREE from './three.js-master/build/three.module.js';
 
 var groundDistance=0;
 var objects=[];
