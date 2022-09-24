@@ -1,8 +1,8 @@
-import * as THREE from 'three';
-import * as GLTF from 'gltf';
+import * as THREE from 'https://unpkg.com/three@0.138.0/build/three.module.js';
+import * as GLTF from 'https://unpkg.com/three@0.138.0/examples/jsm/loaders/GLTFLoader.js';
 import * as UTIL from 'utilities';
 import * as ANIMATION from 'animation';
-import * as LOADER from 'loader';
+import * as LOADER from 'https://unpkg.com/three@0.138.0/src/loaders/LoadingManager.js';
 import {Racoon} from 'player';
 import {World} from 'world';
 
