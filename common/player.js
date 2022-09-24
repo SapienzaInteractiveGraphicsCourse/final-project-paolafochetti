@@ -1,4 +1,3 @@
-import * as GLTF from 'gltf';
 import * as THREE from '../three.js-master/build/three.module.js'
 export class Racoon{
 
