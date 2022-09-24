@@ -114,9 +114,9 @@ function loadModels(){
 	treasureNormal = textLoader.load("./texture/crystalBall/Normal.jpg");
 	treasureRoughness = textLoader.load("./texture/crystalBall/Roughness.jpg");
 
-	PlanetAmbientOcclusion = textLoader.load("./texture/planet0/AmbientOcclusion.jpg");
-	PlanetBaseColor = textLoader.load("./texture/planet0/BaseColor.jpg");
-	PlanetHeight = textLoader.load("./texture/planet0/Height.png");
+	PlanetAmbientOcclusion = textLoader.load("texture/planet0/AmbientOcclusion.jpg");
+	PlanetBaseColor = textLoader.load("texture/planet0/BaseColor.jpg");
+	PlanetHeight = textLoader.load("texture/planet0/Height.png");
 	PlanetNormal = textLoader.load("./texture/planet0/Normal.jpg");
 	PlanetRoughness = textLoader.load("./texture/planet0/Roughness.jpg");
 
