@@ -2,9 +2,9 @@ import * as THREE from './three.js-master/build/three.module.js';
 import * as GLTF from './three.js-master/examples/jsm/loaders/GLTFLoader.js';
 import * as LOADER from './three.js-master/src/loaders/LoadingManager.js';
 import * as UTIL from './common/utilities';
-import * as ANIMATION from '/tree/main/common/animation';
-import {Racoon} from '/tree/main/common/player';
-import {World} from '/tree/main/common/world';
+import * as ANIMATION from './common/animation';
+import {Racoon} from './common/player';
+import {World} from './common/world';
 
 
 var racoon;
