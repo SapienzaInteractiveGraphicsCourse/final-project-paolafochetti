@@ -1,10 +1,10 @@
-import * as THREE from 'three';
-import * as GLTF from 'gltf';
-import * as LOADER from 'loader';
-import * as UTIL from 'utilities';
-import * as ANIMATION from 'animation';
-import {Racoon} from 'player';
-import {World} from 'world';
+import * as THREE from './three.js-master/build/three.module.js';
+import * as GLTF from './three.js-master/examples/jsm/loaders/GLTFLoader.js';
+import * as LOADER from './three.js-master/src/loaders/LoadingManager.js';
+import * as UTIL from './common/utilities';
+import * as ANIMATION from './common/animation';
+import {Racoon} from './common/player';
+import {World} from './common/world';
 
 
 var racoon;
