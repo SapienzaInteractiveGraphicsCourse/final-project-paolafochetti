@@ -1,5 +1,5 @@
 import * as THREE from './three.js-master/build/three.module.js';
-import * as GLTF from './three.js-master/examples/jsm/loaders/GLTFLoader.js';
+import * as GLTF from './three.js-master/loaders/GLTFLoader.js';
 import * as LOADER from './three.js-master/src/loaders/LoadingManager.js';
 import * as UTIL from './common/utilities.js';
 import * as ANIMATION from './common/animation.js';
@@ -52,7 +52,7 @@ function loadModels(){
  	const loader = new GLTF.GLTFLoader(manager);
  	
  	//racoon
-	loader.load("/models/racoon.glb", 
+	loader.load("./models/racoon.glb", 
 				function(glb){
 			  		racoon = new Racoon(glb.scene.children[0]);
 			  		skeletonPositioning();
@@ -63,7 +63,7 @@ function loadModels(){
 				},undefined, function(error){console.error(error);});
 
 	//crystal ball
-	loader.load("/models/level2/crystalBall.glb", 
+	loader.load("./models/level2/crystalBall.glb", 
 				function(glb){
 			  		crystal = glb.scene.children[0].children[0];
 			  		crystal.name='crystal';
@@ -72,7 +72,7 @@ function loadModels(){
 				},undefined, function(error){console.error(error);});
 
 	//life
-	loader.load("/models/heart/scene.gltf", 
+	loader.load("./models/heart/scene.gltf", 
 				function(glb){
 			  		lifeModel1 = glb.scene;
 			  		lifeModel1.name='life1';
@@ -87,23 +87,23 @@ function loadModels(){
 				},undefined, function(error){console.error(error);});
 
 	//lifesaver
-	loader.load("/models/level2/lifesaver.glb", function(glb){lifesaver = glb.scene.children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/lifesaver.glb", function(glb){lifesaver1 = glb.scene.children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/lifesaver.glb", function(glb){lifesaver2 = glb.scene.children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/lifesaver.glb", function(glb){lifesaver3 = glb.scene.children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/lifesaver.glb", function(glb){lifesaver4 = glb.scene.children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/lifesaver.glb", function(glb){lifesaver5 = glb.scene.children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/lifesaver.glb", function(glb){lifesaver = glb.scene.children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/lifesaver.glb", function(glb){lifesaver1 = glb.scene.children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/lifesaver.glb", function(glb){lifesaver2 = glb.scene.children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/lifesaver.glb", function(glb){lifesaver3 = glb.scene.children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/lifesaver.glb", function(glb){lifesaver4 = glb.scene.children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/lifesaver.glb", function(glb){lifesaver5 = glb.scene.children[0];},undefined, function(error){console.error(error);});
 
 	//shark
-	loader.load("/models/level2/hammerheadShark.glb", function(glb){shark = glb.scene.children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/hammerheadShark.glb", function(glb){shark1 = glb.scene.children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/hammerheadShark.glb", function(glb){shark2 = glb.scene.children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/hammerheadShark.glb", function(glb){shark3 = glb.scene.children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/hammerheadShark.glb", function(glb){shark4 = glb.scene.children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/hammerheadShark.glb", function(glb){shark5 = glb.scene.children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/hammerheadShark.glb", function(glb){shark = glb.scene.children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/hammerheadShark.glb", function(glb){shark1 = glb.scene.children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/hammerheadShark.glb", function(glb){shark2 = glb.scene.children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/hammerheadShark.glb", function(glb){shark3 = glb.scene.children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/hammerheadShark.glb", function(glb){shark4 = glb.scene.children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/hammerheadShark.glb", function(glb){shark5 = glb.scene.children[0];},undefined, function(error){console.error(error);});
 
 	//buoy
-	loader.load("/models/level2/buoy.glb", function(glb){
+	loader.load("./models/level2/buoy.glb", function(glb){
 			  		buoy = glb.scene.children[0].children[0];
 			  		buoy.rotation.x=-90*Math.PI/180;
 			  		buoy.name='buoy';
@@ -125,15 +125,15 @@ function loadModels(){
 					buoy5=buoy.clone();
 				},undefined, function(error){console.error(error);});
 	//fish
-	loader.load("/models/level2/fish.glb", function(glb){fish = glb.scene.children[0].children[0].children[0].children[0].children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/fish.glb", function(glb){fish1 = glb.scene.children[0].children[0].children[0].children[0].children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/fish.glb", function(glb){fish2 = glb.scene.children[0].children[0].children[0].children[0].children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/fish.glb", function(glb){fish3 = glb.scene.children[0].children[0].children[0].children[0].children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/fish.glb", function(glb){fish4 = glb.scene.children[0].children[0].children[0].children[0].children[0];},undefined, function(error){console.error(error);});
-	loader.load("/models/level2/fish.glb", function(glb){fish5 = glb.scene.children[0].children[0].children[0].children[0].children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/fish.glb", function(glb){fish = glb.scene.children[0].children[0].children[0].children[0].children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/fish.glb", function(glb){fish1 = glb.scene.children[0].children[0].children[0].children[0].children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/fish.glb", function(glb){fish2 = glb.scene.children[0].children[0].children[0].children[0].children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/fish.glb", function(glb){fish3 = glb.scene.children[0].children[0].children[0].children[0].children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/fish.glb", function(glb){fish4 = glb.scene.children[0].children[0].children[0].children[0].children[0];},undefined, function(error){console.error(error);});
+	loader.load("./models/level2/fish.glb", function(glb){fish5 = glb.scene.children[0].children[0].children[0].children[0].children[0];},undefined, function(error){console.error(error);});
 			  		
 	//treasure
-	loader.load("/models/level2/ghostShip.glb", 
+	loader.load("./models/level2/ghostShip.glb", 
 		function(glb){
 	  		treasure = glb.scene.children[0];
 	  		treasure.name = 'treasure';
@@ -148,25 +148,25 @@ function loadModels(){
 	//textures
 	const textLoader = new THREE.TextureLoader(manager);
 
-	AmbientOcclusion = textLoader.load("/texture/Water/AmbientOcclusion.jpg");
-	BaseColor = textLoader.load("/texture/Water/BaseColor.jpg");
-	Height = textLoader.load("/texture/Water/Height.png");
-	Specular = textLoader.load("/texture/Water/Specular.jpg");
-	Normal = textLoader.load("/texture/Water/Normal.jpg");
+	AmbientOcclusion = textLoader.load("./texture/Water/AmbientOcclusion.jpg");
+	BaseColor = textLoader.load("./texture/Water/BaseColor.jpg");
+	Height = textLoader.load("./texture/Water/Height.png");
+	Specular = textLoader.load("./texture/Water/Specular.jpg");
+	Normal = textLoader.load("./texture/Water/Normal.jpg");
 
-	PlanetAmbientOcclusion = textLoader.load("/texture/planet2/AmbientOcclusion.jpg");
-	PlanetBaseColor = textLoader.load("/texture/planet2/BaseColor.jpg");
-	PlanetHeight = textLoader.load("/texture/planet2/Height.png");
-	PlanetNormal = textLoader.load("/texture/planet2/Normal.jpg");
-	PlanetRoughness = textLoader.load("/texture/planet2/Roughness.jpg");
+	PlanetAmbientOcclusion = textLoader.load("./texture/planet2/AmbientOcclusion.jpg");
+	PlanetBaseColor = textLoader.load("./texture/planet2/BaseColor.jpg");
+	PlanetHeight = textLoader.load("./texture/planet2/Height.png");
+	PlanetNormal = textLoader.load("./texture/planet2/Normal.jpg");
+	PlanetRoughness = textLoader.load("./texture/planet2/Roughness.jpg");
 
-	crystalAmbientOcclusion = textLoader.load("/texture/crystalBall/AmbientOcclusion.jpg");
-	crystalBaseColor = textLoader.load("/texture/crystalBall/BaseColor.jpg");
-	crystalHeight = textLoader.load("/texture/crystalBall/Height.png");
-	crystalNormal = textLoader.load("/texture/crystalBall/Normal.jpg");
-	crystalRoughness = textLoader.load("/texture/crystalBall/Roughness.jpg");
+	crystalAmbientOcclusion = textLoader.load("./texture/crystalBall/AmbientOcclusion.jpg");
+	crystalBaseColor = textLoader.load("./texture/crystalBall/BaseColor.jpg");
+	crystalHeight = textLoader.load("./texture/crystalBall/Height.png");
+	crystalNormal = textLoader.load("./texture/crystalBall/Normal.jpg");
+	crystalRoughness = textLoader.load("./texture/crystalBall/Roughness.jpg");
 
-	background = textLoader.load("/texture/outer space.jpg");
+	background = textLoader.load("./texture/outer space.jpg");
 
 }
 
