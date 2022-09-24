@@ -1,0 +1,11 @@
+Model Information:
+* title:	Beating Heart
+* source:	https://sketchfab.com/3d-models/beating-heart-5948873c2c1e4c6285e3f3d18a9b991c
+* author:	JeremyW (https://sketchfab.com/JeremyW)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Beating Heart" (https://sketchfab.com/3d-models/beating-heart-5948873c2c1e4c6285e3f3d18a9b991c) by JeremyW (https://sketchfab.com/JeremyW) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
