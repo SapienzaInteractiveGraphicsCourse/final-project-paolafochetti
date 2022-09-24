@@ -1,9 +1,6 @@
 import * as THREE from '../three.js-master/build/three.module.js';
 import {SphereGeometry} from '../three.js-master/src/geometries/SphereGeometry.js';
 import {animatePlanet} from './animation.js';
-// import * as GLTF from 'gltf';
-
-
 
 export class World{
 	constructor(){
