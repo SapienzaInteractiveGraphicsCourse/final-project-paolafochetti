@@ -326,6 +326,7 @@ export function teleport(racoon, next, camera){
 	createjs.Tween.get(camera.position).wait(1000).to({x:next.position.x+0.5-2, z:next.position.z},10).to({y: 0.35},1000);
 	racoon.position=null;
 	setTimeout(()=>{
+		camera.lookAt(racoon.model.position);
 		racoon.canWalk=true;
 		return racoon;},2001);
 }
