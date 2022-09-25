@@ -216,12 +216,13 @@ function check4Obstacles(model, world){
 			{model.canWalk=false;
 			death(model, world)}
 			
-		else if(out[i].object.name=='bBoxshark' && model.level==2)
+		else if(out[i].object.name.includes('shark') && model.level==2)
 			{model.canWalk=false;
 			death(model, world)}
 
 		else if(out[i].object.name.includes('lifesaver') && model.level==2)
-			{model.canWalk=false;
+			{	
+			model.canWalk=false;
 			model.position=out[i].object}
 
 	}
@@ -290,7 +291,7 @@ export function swim(skeleton){
 
 export function jump(racoon, level, world,objects){
 
-	var findGround = window.setInterval(function(){search4Landing(racoon,world,objects);},100)
+	var findGround = window.setInterval(function(){search4Landing(racoon,world,objects);console.log(racoon.canJump)},100)
 
 		setTimeout(()=>{createjs.Tween.get(racoon.model.position).to({ y: groundDistance},500);
 						clearInterval(findGround);},1900)
@@ -317,7 +318,7 @@ export function jump(racoon, level, world,objects){
 		createjs.Tween.get(racoon.leftElbow.rotation).to({z:racoon.leftElbow.rotation.z - 42*Math.PI/180},1000).to({z: 0.27},1000);		
 		createjs.Tween.get(racoon.leftHand.rotation).to({z:racoon.leftHand.rotation.z-5*Math.PI/180},1000).to({z: 0.10},1000);	
 
-	setTimeout(()=>{whereAmI(racoon,objects,world)},1990);
+	setTimeout(()=>{whereAmI(racoon,objects,world)},2000);
 }
 
 export function teleport(racoon, next, camera){
@@ -326,7 +327,6 @@ export function teleport(racoon, next, camera){
 	createjs.Tween.get(camera.position).wait(1000).to({x:next.position.x+0.5-2, z:next.position.z},10).to({y: 0.35},1000);
 	racoon.position=null;
 	setTimeout(()=>{
-		camera.lookAt(racoon.model.position);
 		racoon.canWalk=true;
 		return racoon;},2001);
 }
@@ -387,7 +387,6 @@ export function whereAmI(racoon,obj,world){
 	var out;
 	if(racoon.level==2){out=rayCaster.intersectObject(objects);}
 	if(racoon.level<2){out = rayCaster.intersectObjects(objects);}
-
 	if (out.length==0){
 		racoon.canWalk=false;
 		racoon.position='void';
@@ -431,6 +430,7 @@ export function whereAmI(racoon,obj,world){
 
 			else if (out[i].object.name.includes('ground') && racoon.level<2){racoon.position=out[i].object}
 			}
+
 		}
 	return racoon;
 	
