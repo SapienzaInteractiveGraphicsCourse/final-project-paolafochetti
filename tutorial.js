@@ -295,7 +295,7 @@ function init(){
 		if(world.sceneTop.getObjectByName( 'life3')==undefined && clock==4){talk();}
 		if(racoon.grab){racoon.canWalk=false;}
 		if(racoon.model.position.x>8 && racoon.model.position.x<9.5 && racoon.model.position.z>2.5 && racoon.model.position.z<4 &&racoon.stolen==false){racoon.canWalk=false;racoon.grab=true;}
-		else if(racoon.pressed.includes(true) && world.sceneTop.getObjectByName( 'life1')!=undefined && racoon.lostLif==false){
+		else if(racoon.pressed.includes(true) && world.sceneTop.getObjectByName( 'life1')!=undefined){
 			if(racoon.model.position.x>4.30 && clock==3){
 				if(racoon.model.position.x<4.50){talk();}
 			}
@@ -315,8 +315,6 @@ function init(){
 			}
 			else if(racoon.canWalk==true && racoon.canJump==false ){ANIMATION.move(racoon,world)}
 		}
-		else if(world.sceneTop.getObjectByName( 'life1')!=undefined && racoon.lostLife==true){racoon.canJump=false;setTimeout(()=>{racoon.canJump=true;racoon.lostLife=false;},1500)}
-
 	},310)
 }
 
