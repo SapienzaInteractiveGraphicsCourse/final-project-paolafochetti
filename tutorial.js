@@ -264,7 +264,7 @@ function init(){
 						break;
 
 					case 77: //M
-						if(world.completed || racoon.dead){location.replace("./main.html")}
+						if(world.completed || racoon.dead){location.replace("./index.html")}
 						break;	
 				}	
 			}
