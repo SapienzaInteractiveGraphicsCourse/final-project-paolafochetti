@@ -294,10 +294,10 @@ function init(){
 	var interval = window.setInterval(function(){
 		if(world.sceneTop.getObjectByName( 'life3')==undefined && clock==4){talk();}
 		if(racoon.grab){racoon.canWalk=false;}
-		if(racoon.model.position.x>8 && racoon.model.position.x<9.5 && racoon.model.position.z>2.5 && racoon.model.position.z<4 &&racoon.stolen==false){console.log('c');racoon.canWalk=false;racoon.grab=true;}
+		if(racoon.model.position.x>8 && racoon.model.position.x<9.5 && racoon.model.position.z>2.5 && racoon.model.position.z<4 &&racoon.stolen==false){racoon.canWalk=false;racoon.grab=true;}
 		else if(racoon.pressed.includes(true) && world.sceneTop.getObjectByName( 'life1')!=undefined){
 			if(racoon.model.position.x>4.30 && clock==3){
-				if(racoon.model.position.x<4.50){talk();}
+				if(racoon.model.position.x<5){talk();}
 			}
 			else if(racoon.canWalk==true && racoon.canJump==true){
 				
