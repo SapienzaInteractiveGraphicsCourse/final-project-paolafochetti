@@ -154,23 +154,23 @@ export function move(racoon,world){
 	else{
 	
 		if (racoon.pressed[0]==true){
-			createjs.Tween.get(racoon.model.position).to({x:racoon.model.position.x+0.5},900);
-			createjs.Tween.get(world.camera.position).to({x: world.camera.position.x+0.5},900);
+			createjs.Tween.get(racoon.model.position).to({x:racoon.model.position.x+1},900);
+			createjs.Tween.get(world.camera.position).to({x: world.camera.position.x+1},900);
 		}
 			
 		if (racoon.pressed[1]==true){
-			createjs.Tween.get(racoon.model.position).to({z: racoon.model.position.z+0.5},900);
-			createjs.Tween.get(world.camera.position).to({z: world.camera.position.z+0.5},900);
+			createjs.Tween.get(racoon.model.position).to({z: racoon.model.position.z+1},900);
+			createjs.Tween.get(world.camera.position).to({z: world.camera.position.z+1},900);
 		}
 	
 		if (racoon.pressed[2]==true){
-			createjs.Tween.get(racoon.model.position).to({z: racoon.model.position.z-0.5},900);
-			createjs.Tween.get(world.camera.position).to({z: world.camera.position.z-0.5},900);
+			createjs.Tween.get(racoon.model.position).to({z: racoon.model.position.z-1},900);
+			createjs.Tween.get(world.camera.position).to({z: world.camera.position.z-1},900);
 		}
 	
 		if (racoon.pressed[3]==true){
-			createjs.Tween.get(racoon.model.position).to({x: racoon.model.position.x-0.5},900);
-			createjs.Tween.get(world.camera.position).to({x: world.camera.position.x-0.5},900);
+			createjs.Tween.get(racoon.model.position).to({x: racoon.model.position.x-1},900);
+			createjs.Tween.get(world.camera.position).to({x: world.camera.position.x-1},900);
 		}
 	
 		setTimeout(()=>{clearInterval(obstacles)},900)
