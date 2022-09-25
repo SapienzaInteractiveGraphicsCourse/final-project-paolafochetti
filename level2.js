@@ -329,7 +329,7 @@ function init(){
 					else if(racoon.model.position.x>91 && clock==5){talk();}
 					else if(racoon.model.position.x>93 && clock==6){ANIMATION.leave(racoon,world,treasure)}
 					else if(racoon.model.position.x>3 && clock==1){talk();}
-					else if(racoon.model.position.x>18 && clock==2){talk();}
+					else if(racoon.model.position.x>17 && clock==2){talk();}
 					else if(racoon.model.position.x>23 && clock==3){talk();}
 					else if(racoon.position!=null && racoon.position!='void' && racoon.position.name.includes('lifesaver')){
 						if(racoon.position.name.includes('bBox')){racoon.position=racoon.position.parent;}
