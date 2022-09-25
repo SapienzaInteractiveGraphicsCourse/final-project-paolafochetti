@@ -329,7 +329,7 @@ function init(){
 				ANIMATION.moveLegs(racoon);
 				setTimeout(()=>{
 					racoon=ANIMATION.whereAmI(racoon,objects,world);
-					if (racoon.canWalk==false && racoon.position.includes('plane') &&racoon.stolen==true){setTimeout(()=>{racoon.canWalk=true},100)}
+					if (racoon.canWalk==false && racoon.position.name.includes('plane') &&racoon.stolen==true){setTimeout(()=>{racoon.canWalk=true},100)}
 					if (racoon.position.name=='plane6' && racoon.stolen==true){talk();}
 
 				},100)
