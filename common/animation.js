@@ -220,7 +220,7 @@ function check4Obstacles(model, world){
 			{model.canWalk=false;
 			death(model, world)}
 
-		else if(out[i].object.name=='bBoxlifesaver' && model.level==2 && out[i].distance<1)
+		else if(out[i].object.name.includes('lifesaver') && model.level==2)
 			{model.canWalk=false;
 			model.position=out[i].object}
 
@@ -428,7 +428,7 @@ export function whereAmI(racoon,obj,world){
 
 				}
 
-			else if (out[i].object.name.includes('ground')){racoon.position=out[i].object}
+			else if (out[i].object.name.includes('ground') && racoon.level<2){racoon.position=out[i].object}
 			}
 		}
 	return racoon;
