@@ -79,7 +79,7 @@ function loadModels(){
 				},undefined, function(error){console.error(error);});
 	
 	//spaceShip
-	loader.load("models/training/spaceShip.glb", 
+	loader.load("./models/training/spaceShip.glb", 
 				function(glb){
 			  		spaceShip = glb.scene.children[0];
 			  		spaceShip.name='spaceShip';
@@ -114,9 +114,9 @@ function loadModels(){
 	treasureNormal = textLoader.load("./texture/crystalBall/Normal.jpg");
 	treasureRoughness = textLoader.load("./texture/crystalBall/Roughness.jpg");
 
-	PlanetAmbientOcclusion = textLoader.load("texture/planet0/AmbientOcclusion.jpg");
+	PlanetAmbientOcclusion = textLoader.load("./texture/planet0/AmbientOcclusion.jpg");
 	PlanetBaseColor = textLoader.load("./texture/planet0/BaseColor.jpg");
-	PlanetHeight = textLoader.load("texture/planet0/Height.png");
+	PlanetHeight = textLoader.load("./texture/planet0/Height.png");
 	PlanetNormal = textLoader.load("./texture/planet0/Normal.jpg");
 	PlanetRoughness = textLoader.load("./texture/planet0/Roughness.jpg");
 
