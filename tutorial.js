@@ -103,7 +103,7 @@ function loadModels(){
 	const textLoader = new THREE.TextureLoader(manager);
 
 	AmbientOcclusion = textLoader.load("./texture/training/AmbientOcclusion.jpg");
-	BaseColor = textLoader.load("./texture/training/Basecolor.jpg");
+	BaseColor = textLoader.load("./texture/training/BaseColor.jpg");
 	Height = textLoader.load("./texture/training/Height.png");
 	Normal = textLoader.load("./texture/training/Normal.jpg");
 	Roughness = textLoader.load("./texture/training/Roughness.jpg");
@@ -115,7 +115,7 @@ function loadModels(){
 	treasureRoughness = textLoader.load("./texture/crystalBall/Roughness.jpg");
 
 	PlanetAmbientOcclusion = textLoader.load("./texture/planet0/AmbientOcclusion.jpg");
-	PlanetBaseColor = textLoader.load("./texture/planet0/BaseColor.jpg");
+	PlanetBaseColor = textLoader.load("./texture/planet0/Basecolor.jpg");
 	PlanetHeight = textLoader.load("./texture/planet0/Height.png");
 	PlanetNormal = textLoader.load("./texture/planet0/Normal.jpg");
 	PlanetRoughness = textLoader.load("./texture/planet0/Roughness.jpg");
