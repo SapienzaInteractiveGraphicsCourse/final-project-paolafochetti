@@ -284,11 +284,11 @@ function init(){
 						break;
 
 			case 78: //N
-				if(world.completed){location.replace("./main.html")}
+				if(world.completed){location.replace("./index.html")}
 				break;
 
 			case 77: //M
-				if(world.completed || racoon.dead){location.replace("./main.html")}
+				if(world.completed || racoon.dead){location.replace("./index.html")}
 				break;	
 		}	
 	}
