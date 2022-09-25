@@ -352,35 +352,47 @@ function positionLifesaver(){
 
 	world.scene.add(lifesaver);
 	lifesaver.name='lifesaver';
+	lifesaver.traverse(function(child){
+			if(child.type == 'Object3D'){child.name='lifesaver'}})
 	lifesaver.position.set(25,0.2,-2);
 	createBBox(lifesaver);
 	teleports.push(lifesaver)
 
 	lifesaver1.name='lifesaver';
-	world.scene.add(lifesaver1)
+	lifesaver1.traverse(function(child){
+			if(child.type == 'Object3D'){child.name='lifesaver'}})
+	world.scene.add(lifesaver1);
 	lifesaver1.position.set(43,0.2,10);
 	createBBox(lifesaver1);
 	teleports.push(lifesaver1)
 
 	lifesaver2.name='lifesaver';
-	world.scene.add(lifesaver2)
+	lifesaver2.traverse(function(child){
+			if(child.type == 'Object3D'){child.name='lifesaver'}})
+	world.scene.add(lifesaver2);
 	lifesaver2.position.set(52,0.2,3);
 	createBBox(lifesaver2);
 	teleports.push(lifesaver2)
 
 	lifesaver3.name='lifesaver';
+	lifesaver3.traverse(function(child){
+			if(child.type == 'Object3D'){child.name='lifesaver'}})
 	world.scene.add(lifesaver3)
 	lifesaver3.position.set(62.5,0.2,-5);
 	createBBox(lifesaver3);
 	teleports.push(lifesaver3)
 
 	lifesaver4.name='lifesaver';
+	lifesaver4.traverse(function(child){
+			if(child.type == 'Object3D'){child.name='lifesaver'}})
 	world.scene.add(lifesaver4)
 	lifesaver4.position.set(82.5,0.2,-7);
 	createBBox(lifesaver4);
 	teleports.push(lifesaver4)
 
 	lifesaver5.name='lifesaver';
+	lifesaver5.traverse(function(child){
+			if(child.type == 'Object3D'){child.name='lifesaver'}})
 	world.scene.add(lifesaver5)
 	lifesaver5.position.set(89,0.2,2);
 	createBBox(lifesaver5);
