@@ -288,11 +288,10 @@ function init(){
 				if (racoon.canJump){
 					racoon.startingJump = racoon.model.position.clone()
 					racoon.canJump=false;
-					ANIMATION.jump(racoon,2,world,objects);}
+					ANIMATION.jump(racoon,2,world,objects);
 				setTimeout(()=>{
 					racoon.canWalk=true;
-					racoon.canJump=true;},2000)
-
+					racoon.canJump=true;},2500)}
 				break;
 		}	
 	}
