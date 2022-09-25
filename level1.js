@@ -85,7 +85,7 @@ function loadModels(){
 				},undefined, function(error){console.error(error);});
 	
 	//spaceship
-	loader.load("./models/level1/spaceShip.glb", 
+	loader.load("./models/level1/spaceship.glb", 
 				function(glb){
 			  		spaceShip = glb.scene.children[0];
 			  		spaceShip.name='spaceShip';
