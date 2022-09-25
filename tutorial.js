@@ -241,31 +241,32 @@ function init(){
 							},800);
 						}
 						break;
-					case 32: //spacebar
-						if (racoon.canJump && clock>3){
-							racoon.startingJump = racoon.model.position.clone()
-							racoon.canJump=false;
-							ANIMATION.jump(racoon,2,world,objects);}
+				case 32: //spacebar
+					if (racoon.canJump && clock>3){
+						racoon.startingJump = racoon.model.position.clone()
+						racoon.canJump=false;
+						ANIMATION.jump(racoon,2,world,objects);
 						setTimeout(()=>{
 							racoon.canWalk=true;
-							racoon.canJump=true;},2000)
-		
+							racoon.canJump=true;},2500)
+					}
+	
 						break;
 
-					case 37: //left <-
-						world.camera.position.x+=1*Math.PI/180
-						break;
-					case 39: //right ->
-						world.camera.position.x-=1*Math.PI/180
-						break;
+				case 37: //left <-
+					world.camera.position.x+=1*Math.PI/180
+					break;
+				case 39: //right ->
+					world.camera.position.x-=1*Math.PI/180
+					break;
 
-					case 78: //N
-						if(world.completed){location.replace("./level1.html")}
-						break;
+				case 78: //N
+					if(world.completed){location.replace("./level1.html")}
+					break;
 
-					case 77: //M
-						if(world.completed || racoon.dead){location.replace("./index.html")}
-						break;	
+				case 77: //M
+					if(world.completed || racoon.dead){location.replace("./index.html")}
+					break;	
 				}	
 			}
 		
