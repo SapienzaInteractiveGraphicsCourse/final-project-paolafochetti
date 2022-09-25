@@ -103,7 +103,7 @@ function loadModels(){
 	const textLoader = new THREE.TextureLoader(manager);
 
 	AmbientOcclusion = textLoader.load("./texture/training/AmbientOcclusion.jpg");
-	BaseColor = textLoader.load("./texture/training/BaseColor.jpg");
+	BaseColor = textLoader.load("texture/training/BaseColor.jpg");
 	Height = textLoader.load("./texture/training/Height.png");
 	Normal = textLoader.load("./texture/training/Normal.jpg");
 	Roughness = textLoader.load("./texture/training/Roughness.jpg");
