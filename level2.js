@@ -665,11 +665,11 @@ function createBBox(object){
 function talk(){
 	switch(clock){
 		case 0:
-			document.getElementById('ins').innerHTML = "Hello there, that's Oswin talking. Today i will follow you directly into the mission. Can you see the treasure you've stolen during the training? I'm in there, I've told you it would became useful in the future. Unfortunately today we have to swim to reach our treasure, let's just go ahead for the moment!";
+			document.getElementById('ins').innerHTML = "Hello there, that's Oswin talking. Today i will follow you directly into the mission. Can you see the treasure you've stolen during the training? I'm in there, I've told you it would became useful in the future. Unfortunately, today we have to swim to reach our treasure, let's just go ahead for the moment!";
 			break;
 
 		case 1:
-			document.getElementById('ins').innerHTML = "Pay attention, fishes can eat us and buoy can make us drown!";
+			document.getElementById('ins').innerHTML = "Pay attention, fishes can eat us and buoy can make us drown!\nOh, by the way, did i already tlll you that here it's impossible to jump?";
 			break;
 
 		case 2:
