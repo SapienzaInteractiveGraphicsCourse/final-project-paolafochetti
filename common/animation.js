@@ -481,7 +481,7 @@ export function death(racoon, world){
 		if(life!=undefined){racoon.loseLife();}
 		world.sceneTop.remove(life);
 		racoon.recoverPosition(racoon.checkPoint);
-		world.camera.position.x=racoon.checkPoint.x-3;
+		world.camera.position.x=racoon.checkPoint.x-2;
 		world.camera.position.z=0;
 		if(racoon.level!=2){setTimeout(()=>{whereAmI(racoon,objects,world.camera);},10);}
 		if(racoon.life==0){
