@@ -385,8 +385,9 @@ export function whereAmI(racoon,obj,world){
 	rayCaster.set(racoon.model.position,new THREE.Vector3(0,-1,0));
 		
 	var out;
+	console.log(out)
 	if(racoon.level==2){out=rayCaster.intersectObject(objects);}
-	if(racoon.level<2){out = rayCaster.intersectObjects(objects);}
+	else if(racoon.level<2){out = rayCaster.intersectObjects(objects);}
 	if (out.length==0){
 		racoon.canWalk=false;
 		racoon.position='void';
