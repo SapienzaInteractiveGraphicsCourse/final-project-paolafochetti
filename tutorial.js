@@ -79,7 +79,7 @@ function loadModels(){
 				},undefined, function(error){console.error(error);});
 	
 	//spaceShip
-	loader.load("./models/training/spaceShip.glb", 
+	loader.load("./models/training/spaceship.glb", 
 				function(glb){
 			  		spaceShip = glb.scene.children[0];
 			  		spaceShip.name='spaceShip';
@@ -103,7 +103,7 @@ function loadModels(){
 	const textLoader = new THREE.TextureLoader(manager);
 
 	AmbientOcclusion = textLoader.load("./texture/training/AmbientOcclusion.jpg");
-	BaseColor = textLoader.load("./texture/training/BaseColor.jpg");
+	BaseColor = textLoader.load("./texture/training/Basecolor.jpg");
 	Height = textLoader.load("./texture/training/Height.png");
 	Normal = textLoader.load("./texture/training/Normal.jpg");
 	Roughness = textLoader.load("./texture/training/Roughness.jpg");
