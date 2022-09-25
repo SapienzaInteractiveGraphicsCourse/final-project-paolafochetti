@@ -323,8 +323,8 @@ export function jump(racoon, level, world,objects){
 
 export function teleport(racoon, next, camera){
 
-	createjs.Tween.get(racoon.model.position).to({y:-0.5, x:racoon.position.position.x, z:racoon.position.position.z},1000).to({x:next.position.x, z:next.position.z+1},1).to({y: 0.35},1000);
-	createjs.Tween.get(camera.position).wait(1000).to({x:next.position.x+0.5-2, z:next.position.z},10).to({y: 0.35},1000);
+	createjs.Tween.get(racoon.model.position).to({x:racoon.position.position.x,y:-0.5, z:racoon.position.position.z},1000).to({x:next.position.x, z:next.position.z+1},1).to({y: 0.35},1000);
+	createjs.Tween.get(camera.position).wait(1000).to({x:next.position.x-2, z:next.position.z+1},10);
 	racoon.position=null;
 	setTimeout(()=>{
 		racoon.canWalk=true;
