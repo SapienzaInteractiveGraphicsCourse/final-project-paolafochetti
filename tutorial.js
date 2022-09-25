@@ -242,7 +242,7 @@ function init(){
 						}
 						break;
 				case 32: //spacebar
-					if (racoon.canJump && clock>3){
+					if (racoon.canJump && clock>4){
 						racoon.startingJump = racoon.model.position.clone()
 						racoon.canJump=false;
 						ANIMATION.jump(racoon,2,world,objects);
