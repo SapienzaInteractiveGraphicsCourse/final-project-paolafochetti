@@ -320,7 +320,7 @@ function init(){
 	var interval = window.setInterval(function(){
 		if(racoon.grab){racoon.canWalk=false;}
 
-		if(racoon.pressed.includes(true) && world.sceneTop.getObjectByName( 'life1')!=undefined){
+		if(racoon.pressed.includes(true) && world.sceneTop.getObjectByName( 'life1')!=undefined && racoon.lostLife==false){
 
 			if(racoon.canWalk==true && racoon.canJump==true){
 
@@ -336,6 +336,8 @@ function init(){
 			}
 			else if(racoon.canWalk==true && racoon.canJump==false ){ANIMATION.move(racoon,world)}
 		}
+		else if(world.sceneTop.getObjectByName( 'life1')!=undefined && racoon.lostLife==true){racoon.canJump=false;setTimeout(()=>{racoon.canJump=true;racoon.lostLife=false;},1500)}
+
 		else if(racoon.position.name=='plane1'||racoon.position.name=='plane3'||racoon.position.name=='plane4'||racoon.position.name=='plane5'){racoon=ANIMATION.whereAmI(racoon,objects,world);}
 
 	},310)
